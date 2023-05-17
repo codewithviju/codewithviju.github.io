@@ -284,6 +284,13 @@ function scrollToSection(event, sectionId) {
   section.scrollIntoView({ behavior: 'smooth' });
 }
 
+
+    fetch("projects.json").then((result) => result.json()).then((data) => {
+        data.map((item) => {
+            console.log(item.plateform);
+        })
+    });
+
     </script>
 </body>
 
