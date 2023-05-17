@@ -1,0 +1,44 @@
+ body {
+ 	background: var(--bg-dark);
+  	color: var(--white);
+}
+.main_header .navbar .navbar-nav .nav-item .nav-link {
+	color: var(--white);
+}
+
+.about-section .about-inner {
+    background: rgba(102, 102, 102, 0.7);
+}
+
+.about-section .about-inner .about-details .name h4 {
+  color: var(--white);
+}
+
+.about-section .about-inner .about-details .name p {
+  color: var(--white);
+}
+
+.about-section .about-inner .about-details .social-link .link a {
+  color: var(--white);
+}
+
+.main-title h2 {
+  color: var(--white);
+}
+
+.certificat-section .certificat-inner .data-box .data-inner {
+background: rgba(102, 102, 102, 0.7);
+}
+
+.certificat-section .certificat-inner .data-box .data-inner .name {.
+  color: var(--white);
+}
+
+.certificat-section .certificat-inner .data-box .data-inner .date p {
+ color: var(--white);
+}
+
+
+
+
+note: logo and image and link-icon imiage change karvi dark mode ma
