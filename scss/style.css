@@ -203,6 +203,7 @@ a:hover {
   border-radius: 20px;
   padding: 40px 20px 30px;
   text-align: center;
+  width: 260px;
 }
 @media (max-width: 767px) {
   .certificat-section .certificat-inner .data-box .data-inner {

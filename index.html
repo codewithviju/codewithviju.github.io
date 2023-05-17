@@ -1,264 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png" />
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="scss/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/bootstrap.min.css" />
     <!-- font awesome css-->
-    <link rel="stylesheet" href="scss/all.min.css">
+    <link rel="stylesheet" href="scss/all.min.css" />
     <!-- slick css -->
-    <link rel="stylesheet" href="scss/slick.css">
-    <link rel="stylesheet" href="scss/slick-theme.css">
+    <link rel="stylesheet" href="scss/slick.css" />
+    <link rel="stylesheet" href="scss/slick-theme.css" />
     <!-- custome scss -->
     <!-- <link rel="stylesheet" href="scss/style.scss"> -->
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="main_header">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="image/logo.png" alt="main logo" class="img-fluid">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="#" onclick="scrollToSection(event, 'certificate-section-div')">Certifications</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" onclick="scrollToSection(event, 'project-section-div')">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Me</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex ms-lg-4">
-                            <a href="javascript:void(0)" id="enableDarkMode"><img src="image/theme-btn.png" alt=""></a>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-        </div>
+      <div class="main_header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="image/logo.png" alt="main logo" class="img-fluid" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="#"
+                    onclick="scrollToSection(event, 'certificate-section-div')"
+                    >Certifications</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    onclick="scrollToSection(event, 'project-section-div')"
+                    >Projects</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Me</a>
+                </li>
+              </ul>
+              <form class="d-flex ms-lg-4">
+                <a href="javascript:void(0)" id="enableDarkMode"
+                  ><img src="image/theme-btn.png" alt=""
+                /></a>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section class="about-section spacer">
-            <div class="container">
-                <div class="about-inner">
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <div class="profile-img">
-                                <img class="img-fluid" src="image/profile-img.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-8">
-                            <div class="about-details">
-                                <div class="name">
-                                    <h4>Rahul Saliya</h4>
-                                    <p>Android Developer</p>
-                                </div>
-                                <div class="social-link">
-                                    <div class="social-inner">
-                                        <div class="link">
-                                            <img src="image/GitHub.png" alt="">
-                                            <a href="javascript:void(0)">link</a>
-                                        </div>
-                                        <div class="link">
-                                            <img src="image/Email.png" alt="">
-                                            <a href="javascript:void(0)">link</a>
-                                        </div>
-                                    </div>
-                                    <div class="social-inner">
-                                        <div class="link">
-                                            <img src="image/LinkedIn.png" alt="">
-                                            <a href="javascript:void(0)">link</a>
-                                        </div>
-                                        <div class="link">
-                                            <img src="image/Upwork.png" alt="">
-                                            <a href="javascript:void(0)">link</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      <section class="about-section spacer">
+        <div class="container">
+          <div class="about-inner">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="profile-img">
+                  <img class="img-fluid" src="image/profile-img.png" alt="" />
+                </div>
+              </div>
+              <div class="col-12 col-md-8">
+                <div class="about-details">
+                  <div class="name">
+                    <h4>Rahul Saliya</h4>
+                    <p>Android Developer</p>
+                  </div>
+                  <div class="social-link">
+                    <div class="social-inner">
+                      <div class="link">
+                        <img src="image/GitHub.png" alt="" />
+                        <a href="javascript:void(0)">link</a>
+                      </div>
+                      <div class="link">
+                        <img src="image/Email.png" alt="" />
+                        <a href="javascript:void(0)">link</a>
+                      </div>
                     </div>
-                    <p class="desc">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="certificat-section spacer" id="certificate-section-div">
-            <div class="container">
-                <div class="main-title">
-                    <h2>Cetifications</h2>
-                </div>
-                <div class="certificat-inner">
-                    <div class="row justify-content-center ">
-                        <div class="data-box col-12 col-sm-6 col-md-4">
-                                <div class="data-inner">
-                                    <div class="data-img">
-                                        <a href="javascript:void(0)"><img class="img-fluid" src="image/data-img.png" alt=""></a>
-                                        
-                                    </div>
-                                    <h4 class="name">Certificate Name</h4>
-                                    <div class="date">
-                                        <a href="javascript:void(0)">Android</a>
-                                        <p>June 2019</p>
-                                    </div>
-                                    <div class="data-btn">
-                                        <a href="javascript:void(0)">View</a>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="data-box col-12 col-sm-6 col-md-4">
-                                <div class="data-inner">
-                                    <div class="data-img">
-                                        <a href="javascript:void(0)">
-                                        <img class="img-fluid" src="image/data-img.png" alt="">
-                                        </a>
-                                    </div>
-                                    <h4 class="name">Certificate Name</h4>
-                                    <div class="date">
-                                        <a href="javascript:void(0)">Android</a>
-                                        <p>June 2019</p>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="data-box col-12 col-sm-6 col-md-4">
-                                <div class="data-inner">
-                                    <div class="data-img">
-                                            <a href="javascript:void(0)">
-                                        <img class="img-fluid" src="image/data-img.png" alt="">
-                                        </a>
-                                    </div>
-                                    <h4 class="name">Certificate Name</h4>
-                                    <div class="date">
-                                        <a href="javascript:void(0)">Android</a>
-                                        <p>June 2019</p>
-                                    </div>
-                                    <div class="data-btn">
-                                        <a href="javascript:void(0)">View</a>
-                                    </div>
-                            </div>
-                        </div>
+                    <div class="social-inner">
+                      <div class="link">
+                        <img src="image/LinkedIn.png" alt="" />
+                        <a href="javascript:void(0)">link</a>
+                      </div>
+                      <div class="link">
+                        <img src="image/Upwork.png" alt="" />
+                        <a href="javascript:void(0)">link</a>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+            <p class="desc">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section class="project certificat-section  spacer" id="project-section-div">
-            <div class="container">
-                <div class="main-title">
-                    <h2>Projects</h2>
+      <section class="certificat-section spacer" id="certificate-section-div">
+        <div class="container">
+          <div class="main-title">
+            <h2>Cetifications</h2>
+          </div>
+          <div class="certificat-inner">
+            <div class="row justify-content-center" id="certificateList">
+              <!-- <div class="data-box col-12 col-sm-6 col-md-4">
+                <div class="data-inner">
+                  <div class="data-img">
+                    <a href="javascript:void(0)"
+                      ><img class="img-fluid" src="image/data-img.png" alt=""
+                    /></a>
+                  </div>
+                  <h4 class="name">Certificate Name</h4>
+                  <div class="date">
+                    <a href="javascript:void(0)">Android</a>
+                    <p>June 2019</p>
+                  </div>
+                  <div class="data-btn">
+                    <a href="javascript:void(0)">View</a>
+                  </div>
                 </div>
-                <div class="certificat-inner">
-                    <div class="row justify-content-center ">
-                        <div class="data-box col-12 col-sm-6 col-md-4">
-                                <div class="data-inner">
-                                    <div class="data-img">
-                                           <a href="javascript:void(0)">
-                                        <img class="img-fluid" src="image/data-img.png" alt="">
-                                        </a>
-                                    </div>
-                                    <h4 class="name">Certificate Name</h4>
-                                    <div class="date">
-                                        <a href="javascript:void(0)">Android</a>
-                                        <p>June 2019</p>
-                                    </div>
-                                    <div class="data-btn">
-                                        <a href="javascript:void(0)">
-                                            <img class="img-fluid" src="image/Play-Store-icon.png" alt="" srcset="">
-                                        </a>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="data-box col-12 col-sm-6 col-md-4">
-                                <div class="data-inner">
-                                    <div class="data-img">
-                                           <a href="javascript:void(0)">
-                                        <img class="img-fluid" src="image/data-img.png" alt="">
-                                        </a>
-                                    </div>
-                                    <h4 class="name">Certificate Name</h4>
-                                    <div class="date">
-                                        <a href="javascript:void(0)">Android</a>
-                                        <p>June 2019</p>
-                                    </div>
-                                    <div class="data-btn">
-                                        <a href="javascript:void(0)">
-                                            <img class="img-fluid" src="image/Play-Store-icon.png" alt="" srcset="">
-                                        </a>
-                                            <a href="javascript:void(0)">
-                                            <img class="img-fluid" src="image/GitHub-icon.png" alt="" srcset="">
-                                        </a>
-                                            <a href="javascript:void(0)">
-                                            <img class="img-fluid" src="image/LinkedIn-icon.png" alt="" srcset="">
-                                        </a>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="data-box col-12 col-sm-6 col-md-4">
-                                <div class="data-inner">
-                                    <div class="data-img">
-                                           <a href="javascript:void(0)">
-                                        <img class="img-fluid" src="image/data-img.png" alt="">
-                                        </a>
-                                    </div>
-                                    <h4 class="name">Certificate Name</h4>
-                                    <div class="date">
-                                        <a href="javascript:void(0)">Android</a>
-                                        <p>June 2019</p>
-                                    </div>
-                                    <div class="data-btn">
-                                        <a href="javascript:void(0)">
-                                            <img class="img-fluid" src="image/Play-Store-icon.png" alt="" srcset="">
-                                        </a>
-                                            <a href="javascript:void(0)">
-                                            <img class="img-fluid" src="image/GitHub-icon.png" alt="" srcset="">
-                                        </a>
-                                            <a href="javascript:void(0)">
-                                            <img class="img-fluid" src="image/LinkedIn-icon.png" alt="" srcset="">
-                                        </a>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="data-box col-12 col-sm-6 col-md-4">
+                <div class="data-inner">
+                  <div class="data-img">
+                    <a href="javascript:void(0)">
+                      <img class="img-fluid" src="image/data-img.png" alt="" />
+                    </a>
+                  </div>
+                  <h4 class="name">Certificate Name</h4>
+                  <div class="date">
+                    <a href="javascript:void(0)">Android</a>
+                    <p>June 2019</p>
+                  </div>
                 </div>
+              </div>
+              <div class="data-box col-12 col-sm-6 col-md-4">
+                <div class="data-inner">
+                  <div class="data-img">
+                    <a href="javascript:void(0)">
+                      <img class="img-fluid" src="image/data-img.png" alt="" />
+                    </a>
+                  </div>
+                  <h4 class="name">Certificate Name</h4>
+                  <div class="date">
+                    <a href="javascript:void(0)">Android</a>
+                    <p>June 2019</p>
+                  </div>
+                  <div class="data-btn">
+                    <a href="javascript:void(0)">View</a>
+                  </div>
+                </div>
+              </div> -->
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <div class="shap-1">
-            <img class="img-fluid" src="image/shap-1.png" alt="">
+      <section
+        class="project certificat-section spacer"
+        id="project-section-div"
+      >
+        <div class="container">
+          <div class="main-title">
+            <h2>Projects</h2>
+          </div>
+          <div class="certificat-inner">
+            <div class="row justify-content-center" id="projectList"></div>
+          </div>
         </div>
-        <div class="shap-2">
-            <img class="img-fluid" src="image/shap-2.png" alt="">
-        </div>
-        <div class="shap-3">
-            <img class="img-fluid" src="image/shap-3.png" alt="">
-        </div>
-        <div class="shap-4">
-            <img class="img-fluid" src="image/shap-4.png" alt="">
-        </div>
+      </section>
 
+      <div class="shap-1">
+        <img class="img-fluid" src="image/shap-1.png" alt="" />
+      </div>
+      <div class="shap-2">
+        <img class="img-fluid" src="image/shap-2.png" alt="" />
+      </div>
+      <div class="shap-3">
+        <img class="img-fluid" src="image/shap-3.png" alt="" />
+      </div>
+      <div class="shap-4">
+        <img class="img-fluid" src="image/shap-4.png" alt="" />
+      </div>
     </main>
-
-
 
     <script src="js/jquery-3.6.0.min.js "></script>
     <script src="js/popper.min.js "></script>
@@ -270,30 +227,91 @@
     <script src="js/custom.js "></script>
 
     <script type="text/javascript">
-        const toggleDarkMode = () => {
-  const body = document.body;
-  body.classList.toggle('dark-mode');
-};
+      const toggleDarkMode = () => {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+      };
 
-const image = document.querySelector('#enableDarkMode');
-image.addEventListener('click', toggleDarkMode);
+      const image = document.querySelector("#enableDarkMode");
+      image.addEventListener("click", toggleDarkMode);
 
-function scrollToSection(event, sectionId) {
-  event.preventDefault();
-  const section = document.getElementById(sectionId);
-  section.scrollIntoView({ behavior: 'smooth' });
-}
+      function scrollToSection(event, sectionId) {
+        event.preventDefault();
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: "smooth" });
+      }
 
+      $(document).ready(function () {
+        fetchAllCertificates();
+        fetchAllProjects();
+      });
 
-    fetch("projects.json").then((result) => result.json()).then((data) => {
-        data.map((item) => {
-            console.log(item.plateform);
-        })
-    });
+      async function fetchAllProjects() {
+        try {
+          var html = "";
+          const response = await fetch(
+            "https://codewithviju.github.io/projects.json"
+          );
+          const data = await response.json();
 
+          data.forEach((item) => {
+            html += `<div class="data-box col-12 col-sm-6 col-md-4">
+        <div class="data-inner">
+          <div class="data-img">
+            <a href="javascript:void(0)">
+              <img class="img-fluid img-responsive" src="${item.appImage}" alt="" height="150px" width="150px" />
+            </a>
+          </div>
+          <h4 class="name">${item.projectName}</h4>
+          <div class="date">
+            <a href="javascript:void(0)">${item.plateform}</a>
+            <p>${item.published}</p>
+          </div>
+          <div class="data-btn">
+            <a href="javascript:void(0)">View</a>
+          </div>
+        </div>
+      </div>`;
+          });
+
+          $("#projectList").html(html);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+      async function fetchAllCertificates() {
+        try {
+          var certificateHtml = "";
+          const response = await fetch(
+            "https://codewithviju.github.io/certificates.json"
+          );
+          const data = await response.json();
+
+          data.forEach((item) => {
+            certificateHtml += ` <div class="data-box col-12 col-sm-6 col-md-4">
+                <div class="data-inner">
+                  <div class="data-img">
+                    <a href="javascript:void(0)"
+                      ><img class="img-fluid" src="${item.certificateImage}" alt=""
+                    /></a>
+                  </div>
+                  <h4 class="name">${item.certificateName}</h4>
+                  <div class="date">
+                    <a href="javascript:void(0)">${item.plateform}</a>
+                    <p>${item.published}</p>
+                  </div>
+                  <div class="data-btn">
+                    <a href="javascript:void(0)">View</a>
+                  </div>
+                </div>
+              </div>`;
+          });
+
+          $("#certificateList").html(certificateHtml);
+        } catch (error) {
+          console.error(error);
+        }
+      }
     </script>
-</body>
-
-</html>
-
+  </body>
 </html>
