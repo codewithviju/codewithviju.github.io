@@ -140,7 +140,7 @@ a:hover {
 .about-section .about-inner .about-details .name p {
   font-weight: 400;
   font-size: 22px;
-  color: var(--black);
+  color: var(--black) !important;
 }
 .about-section .about-inner .about-details .social-link {
   margin-bottom: 20px;
@@ -312,8 +312,8 @@ body.dark-mode .about-section .about-inner .about-details .name h4 {
   color: var(--white);
 }
 
-.about-section .about-inner .about-details .name p {
-  color: var(--white);
+body.dark-mode .about-section .about-inner .about-details .name p {
+  color: var(--white) !important;
 }
 
 body.dark-mode .about-section .about-inner .about-details .social-link .link a {
