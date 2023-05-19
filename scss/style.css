@@ -294,89 +294,40 @@ a:hover {
 } /*# sourceMappingURL=style.css.map */
 
 /* // Dark Mode CSS */
+/* // Dark Mode */
+
 body.dark-mode {
   background: var(--bg-dark);
   color: var(--white);
 }
-
-.body.dark-mode .main_header .navbar .navbar-nav .nav-item .nav-link {
+body.dark-mode .main_header .navbar .navbar-nav .nav-item .nav-link {
   color: var(--white);
 }
 
-.body.dark-mode .about-section .about-inner {
-  background: rgba(102, 102, 102, 0.7);
-  color: white;
-}
-
-.body.dark-mode .about-section .about-inner .about-details .name h4 {
-  color: var(--white);
-}
-
-.body.dark-mode .about-section .about-inner .about-details .name p {
-  color: var(--white);
-}
-
-.body.dark-mode
-  .about-section
-  .about-inner
-  .about-details
-  .social-link
-  .link
-  a {
-  color: var(--white);
-}
-
-.body.dark-mode .main-title h2 {
-  color: var(--white);
-}
-
-.body.dark-mode .certificat-section .certificat-inner .data-box .data-inner {
+body.dark-mode .about-section .about-inner {
   background: rgba(102, 102, 102, 0.7);
 }
 
-.body.dark-mode
-  .certificat-section
-  .certificat-inner
-  .data-box
-  .data-inner
-  .name {
+body.dark-mode .about-section .about-inner .about-details .name h4 {
   color: var(--white);
 }
 
-.body.dark-mode
-  .certificat-section
-  .certificat-inner
-  .data-box
-  .data-inner
-  .date
-  p {
+.about-section .about-inner .about-details .name p {
   color: var(--white);
 }
 
-/* Style the scrollbar */
-body::-webkit-scrollbar {
-  width: 10px;
+body.dark-mode .about-section .about-inner .about-details .social-link .link a {
+  color: var(--white);
 }
 
-body::-webkit-scrollbar-track {
-  background: #f1f1f1;
+body.dark-mode .main-title h2 {
+  color: var(--white);
 }
 
-body::-webkit-scrollbar-thumb {
-  background: #888;
+body.dark-mode .navbar .navbar-brand h2 {
+  color: var(--white);
 }
 
-body::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* Disable system scrollbar */
-body {
-  scrollbar-width: thin;
-  scrollbar-color: #888 #f1f1f1;
-}
-
-/* Enable smooth scrolling behavior */
-html {
-  scroll-behavior: smooth;
+body.dark-mode.certificat-section .certificat-inner .data-box .data-inner {
+  background: rgba(102, 102, 102, 0.7);
 }
