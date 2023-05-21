@@ -134,8 +134,8 @@
           <div class="main-title">
             <h2>Cetifications</h2>
           </div>
-          <div class="certificat-inner">
-            <div class="row justify-content-center" id="certificateList"></div>
+          <div class="certificat-inner" id="certificateList">
+           
           </div>
         </div>
       </section>
@@ -149,7 +149,10 @@
             <h2>Projects</h2>
           </div>
           <div class="certificat-inner">
-            <div class="row justify-content-center" id="projectList"></div>
+             <div class="certificat-slider" id="projectList" >
+
+             </div>
+           
           </div>
         </div>
       </section>
@@ -206,7 +209,7 @@
           const data = await response.json();
 
           data.forEach((item) => {
-            html += `<div class="data-box col-12 col-sm-6 col-md-4">
+            html += `<div class="data-box">
         <div class="data-inner">
           <div class="data-img">
             <a href="javascript:void(0)">
@@ -239,7 +242,7 @@
           const data = await response.json();
 
           data.forEach((item) => {
-            certificateHtml += ` <div class="data-box col-12 col-sm-6 col-md-4">
+            certificateHtml += ` <div class="data-box">
                 <div class="data-inner">
                   <div class="data-img">
                     <a href="javascript:void(0)"
