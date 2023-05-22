@@ -92,6 +92,29 @@ $(document).ready(function () {
     }
   });
 
+  //modal slider
+  $(".modal-silder-for").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: ".modal-silder-nav",
+  });
+  $(".modal-silder-nav").slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    asNavFor: ".modal-silder-for",
+    dots: false,
+    arrows: false,
+    centerMode: true,
+    focusOnSelect: true,
+  });
+
+  $("#datapopup").on("shown.bs.modal", function (e) {
+    $(".modal-silder-for").slick("setPosition");
+    $(".modal-silder-nav").slick("setPosition");
+  });
+
   //   var owl = $(".owl-carousel");
   //   owl.owlCarousel({
   //     loop: false,
