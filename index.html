@@ -224,12 +224,7 @@
                     <h2>Projects</h2>
                 </div>
                 <div class="certificat-inner">
-                    <div class="Projects-slider slick-initialized slick-slider">
-                      <div class="slick-list draggable">
-                        <div class="slick-track  allProjectsList" style="opacity: 1; width: 1910px; transform: translate3d(-764px, 0px, 0px);">
-
-                        </div>
-                      </div>
+                    <div class="Projects-slider" id="allProjectsList">
                         <!-- <div class="data-box">
                             <div class="data-inner">
                                 <div class="data-img">
@@ -418,13 +413,13 @@
                             <div class="col-12 col-md-6">
                                 <div class="modal-text">
                                     <div class="name">
-                                        <h4>App Name</h4>
-                                        <p class="mb-0">12 June 2022</p>
+                                        <h4 id="appNamePopup">App Name</h4>
+                                        <p class="mb-0" id="appPublishedPopup">12 June 2022</p>
                                         <div class="work-link d-flex">
-                                            <a href="javascript:void(0)">Android SDK, Java, XML</a>
+                                            <a href="javascript:void(0)" id="appPlateformPopup">Android SDK, Java, XML</a>
                                         </div>
                                     </div>
-                                    <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    <p class="desc" id="appContentPopup">Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever since the
                                         1500s, when an unknown printer took a galley of type and scrambled it to make a
                                         type specimen book. It has survived not only five centuries, but also the leap
@@ -446,6 +441,11 @@
         </div>
 
     <script src="js/jquery-3.6.0.min.js "></script>
+
+    
+
+    
+    
     <script src="js/popper.min.js "></script>
     <!-- bootstarp js -->
     <script src="js/bootstrap.min.js "></script>
@@ -454,7 +454,9 @@
     <!-- custom js -->
     <script src="js/custom.js "></script>
 
-    <script type="text/javascript">
+  
+
+     <script type="text/javascript">
       const toggleDarkMode = () => {
         const body = document.body;
         body.classList.toggle("dark-mode");
@@ -470,7 +472,7 @@
       }
 
       $(document).ready(function () {
-        fetchAllCertificates();
+        // fetchAllCertificates();
         fetchAllProjects();
       });
 
@@ -482,20 +484,26 @@
           );
           const data = await response.json();
 
-          data.forEach((item) => {
-            html += `<div class="data-box slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 352px;">
+          var allImages = JSON.stringify(data.appImages);
+
+          
+
+           data.forEach((item) => {
+
+           
+            html += ` <div class="data-box">
                             <div class="data-inner">
                                 <div class="data-img">
-                                    <a href="javascript:void(0)" tabindex="0">
-                                        <img class="img-fluid" src="${item.appImage}" alt="">
+                                    <a href="javascript:void(0)">
+                                        <img class="img-fluid" src="${item.thumbnailImage}" alt="">
                                     </a>
                                 </div>
-                                <h4 class="name show-project-info">${item.projectName}</h4>
+                               <h4 class="name show-project-info" data-projectname="${item.projectName}" data-plateform="${item.plateform}" data-published="${item.published}" data-description="${item.appContent}" data-appImages="${item.appImages}">${item.projectName}</h4>
                                 <div class="date">
-                                    <a href="javascript:void(0)" tabindex="0">${item.plateform}</a>
+                                    <a href="javascript:void(0)">${item.plateform}</a>
                                     <p>${item.published}</p>
                                 </div>
-                               <div class="data-btn">
+                                <div class="data-btn">
                                     <a href="javascript:void(0)">
                                         <img class="img-fluid" src="image/Play-Store-icon.png" alt="" srcset="">
                                     </a>
@@ -508,9 +516,11 @@
                                 </div>
                             </div>
                         </div>`;
+
+                    
           });
 
-          $(".allProjectsList").html(html);
+          $("#allProjectsList").html(html);
         } catch (error) {
           console.error(error);
         }
@@ -523,7 +533,10 @@
           );
           const data = await response.json();
 
-          data.forEach((item) => {
+         var allImages = JSON.stringify(data.appImages);
+
+          data.forEach((item,index) => {
+            
             certificateHtml += ` <div class="data-box">
                 <div class="data-inner">
                   <div class="data-img">
@@ -531,7 +544,7 @@
                       ><img class="img-fluid" src="${item.certificateImage}" alt=""
                     /></a>
                   </div>
-                  <h4 class="name" data-plateform="${item.plateform}" data-published="${item.published}" data-description="${item.appContent}" data-appImages="${item.appImages}">${item.certificateName}</h4>
+                  <h4 class="name show-project-info" data-projectname="${item.projectName}" data-plateform="${item.plateform}" data-published="${item.published}" data-description="${item.appContent}" data-appImages="${allImages}">${item.certificateName}/></h4>
                   <div class="date">
                     <a href="javascript:void(0)">${item.plateform}</a>
                     <p>${item.published}</p>
@@ -543,21 +556,44 @@
               </div>`;
           });
 
-          $("#certificateList").html(certificateHtml);
+          $("#certificateList").append(certificateHtml);
         } catch (error) {
           console.error(error);
         }
       }
     </script>
 
-    <script type="text/javascript">
-      $(document).on('click','.show-project-info',function(){
+ <script>
+
+      $(document).on('click','.show-project-info',function(e){
+
+        var projectName = $(this).data('projectname');
+        var description = $(this).data('description');
+        var plateform = $(this).data('plateform');
+        var published = $(this).data('published');
+        var projectimages = $(this).data('appimages');
+
+        var imageURLArray = projectimages.split(",");
+        var projectImageshtml = '';
+        imageURLArray.forEach((item)=>{
+        projectImageshtml += `<div class="image">
+                                        <img class="img-fluid" src="${item}" alt="">
+                                    </div>`;
+        });
+        
+        $("#appNamePopup").html(projectName);
+        $("#appPublishedPopup").html(published);
+        $("#appPlateformPopup").html(plateform);
+        $("#appPublishedPopup").html(published);
+        $("#appContentPopup").html(description);
+        $(".modal-silder-for").html(projectImageshtml);
+        $(".modal-silder-nav").html(projectImageshtml);
         $("#datapopup").modal("show");
+
       });
 
       
     </script>
-
     
   </body>
 </html>

@@ -15,33 +15,48 @@
         ]
     },
     {
-        "appImage": "https://cdn-icons-png.flaticon.com/512/906/906343.png",
-        "projectName": "Admin App",
-        "plateform": "Android",
-        "published": "November 2023"
-    },
-    {
-        "appImage": "https://cdn-icons-png.flaticon.com/512/906/906343.png",
-        "projectName": "Admin App",
-        "plateform": "Android",
-        "published": "November 2023"
-    },
-    {
-        "appImage": "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+        "thumbnailImage": "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
         "projectName": "Social Media App",
         "plateform": "Android",
-        "published": "September 2022"
+        "published": "September 2022",
+        "appContent": "this is demo text",
+        "appImages": [
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg"
+        ]
     },
     {
-        "appImage": "https://cdn-icons-png.flaticon.com/512/906/906343.png",
-        "projectName": "Admin App",
+        "thumbnailImage": "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+        "projectName": "Social Media App",
         "plateform": "Android",
-        "published": "November 2023"
+        "published": "September 2022",
+        "appContent": "this is demo text",
+        "appImages": [
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg"
+        ]
     },
     {
-        "appImage": "https://cdn-icons-png.flaticon.com/512/906/906343.png",
-        "projectName": "Admin App",
+        "thumbnailImage": "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+        "projectName": "Social Media App",
         "plateform": "Android",
-        "published": "November 2023"
+        "published": "September 2022",
+        "appContent": "this is demo text",
+        "appImages": [
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg",
+            "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049601.jpg"
+        ]
     }
 ]
