@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const slider1 = $(".certificat-slider");
+  // const slider1 = $(".certificat-slider");
   const slider2 = $(".Projects-slider");
 
   slider1.slick({
@@ -108,11 +108,6 @@ $(document).ready(function () {
     arrows: false,
     centerMode: true,
     focusOnSelect: true,
-  });
-
-  $("#datapopup").on("shown.bs.modal", function (e) {
-    $(".modal-silder-for").slick("setPosition");
-    $(".modal-silder-nav").slick("setPosition");
   });
 
   //   var owl = $(".owl-carousel");
