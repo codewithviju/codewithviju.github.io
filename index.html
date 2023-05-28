@@ -10,8 +10,7 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="scss/bootstrap.min.css" />
     <!-- font awesome css-->
-    <link rel="stylesheet" href="scss/all.min.css" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.css">
+   
 
     <!-- slick css -->
     <link rel="stylesheet" href="scss/slick.css" />
@@ -216,22 +215,7 @@
     <script src="js/bootstrap.min.js "></script>
 
     <script src="js/slick.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="js/custom.js "></script> -->
-
     
-	
-    <!-- custom js -->
-
-    
-    <!-- slick js -->
-   
-
-    
-  
-
      <script type="text/javascript">
       const toggleDarkMode = () => {
         const body = document.body;
@@ -367,9 +351,7 @@
                                     <a href="javascript:void(0)">${item.plateform}</a>
                                     <p>${item.published}</p>
                                 </div>
-                                <div class="data-btn">
-                                    <a href="javascript:void(0)">View</a>
-                                </div>
+                               
                             </div>
                         </div>`;
                     });
@@ -435,8 +417,11 @@
     </script>
 
  <script>
+  
 
       $(document).on('click','.show-project-info',function(e){
+        
+
 
         var projectName = $(this).data('projectname');
         var description = $(this).data('description');
@@ -459,9 +444,17 @@
         $("#appContentPopup").html(description);
         $(".modal-silder-for").html(projectImageshtml);
         $(".modal-silder-nav").html(projectImageshtml);
-        $("#datapopup").modal("show");
+        
 
-        setTimeout(()=>{
+        
+        
+ $("#datapopup").modal("show");
+      });
+
+      $(document).ready(function(){
+        $('#datapopup').on('shown.bs.modal', function() {
+       
+         
             $(".modal-silder-for").slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -478,9 +471,14 @@
             centerMode: true,
             focusOnSelect: true,
           });
-        },0)
+         
+            
 
+         
+       
       });
+      });
+      
 
       
     </script>
