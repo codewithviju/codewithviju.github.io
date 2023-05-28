@@ -217,6 +217,8 @@
     <script src="js/slick.min.js "></script>
     
      <script type="text/javascript">
+      var isSlickInitialized = false;
+
       const toggleDarkMode = () => {
         const body = document.body;
         body.classList.toggle("dark-mode");
@@ -329,11 +331,9 @@
                     console.log('Error occurred while fetching data from the API.');
                 }
             });
-      });
 
-      //fetch All Certificates
-      $(document).ready(function () {
-         $.ajax({
+            //fetch All Certificates
+            $.ajax({
                 url: 'https://codewithviju.github.io/certificates.json',
                 dataType: 'json',
                 success: function(data) {
@@ -414,14 +414,12 @@
             });
       });
 
+
     </script>
 
- <script>
-  
+  <script>
 
       $(document).on('click','.show-project-info',function(e){
-        
-
 
         var projectName = $(this).data('projectname');
         var description = $(this).data('description');
@@ -444,40 +442,36 @@
         $("#appContentPopup").html(description);
         $(".modal-silder-for").html(projectImageshtml);
         $(".modal-silder-nav").html(projectImageshtml);
-        
-
-        
-        
- $("#datapopup").modal("show");
+        $("#datapopup").modal("show");
       });
 
-      $(document).ready(function(){
+
         $('#datapopup').on('shown.bs.modal', function() {
-       
-         
-            $(".modal-silder-for").slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            fade: true,
-            asNavFor: ".modal-silder-nav",
-          });
-          $(".modal-silder-nav").slick({
-            slidesToShow: 5,
-            slidesToScroll: 5,
-            asNavFor: ".modal-silder-for",
-            dots: false,
-            arrows: false,
-            centerMode: true,
-            focusOnSelect: true,
-          });
-         
-            
+             if (!isSlickInitialized) {
+                $(".modal-silder-for").slick({
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  arrows: true,
+                  fade: true,
+                  asNavFor: ".modal-silder-nav"
+                });
 
-         
-       
+            $(".modal-silder-nav").slick({
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              asNavFor: ".modal-silder-for",
+              dots: false,
+              arrows: false,
+              centerMode: true,
+              focusOnSelect: true
+            });
+            isSlickInitialized = true; // Set the flag to indicate that the Slick slider is initialized
+      } else {
+    // Destroy and reinitialize the Slick slider
+   $(".modal-silder-for, .modal-silder-nav").slick('refresh');
+  }
       });
-      });
+    
       
 
       
